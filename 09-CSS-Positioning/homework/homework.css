@@ -3,36 +3,112 @@ Lección 3: Tarea de posicionamiento con CSS. Todo el trabajo debe hacerse en es
 archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 */
 
-/* Ejercicio 1: Centrar el texto en un span */
+/* Ejercicio 1: Centrar el texto en un span 
+
+En este primer ejercicio deberás asegurarte que el texto dentro de este <span> está centrado en la página. El id de este span es "ejercicioUno". El texto solo tiene un forma de alinear conocido como "text-align", para el cual podemos definir los valores "left", "right", "center" o "justify", pero esto solo funcion dentro de los elementos "block" y el <span> inicialmente es un elemento "inline". Define la propiedad "display" para que sea "block" y centra el texto usando "text-align".
+
+
+*/
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
+    display: block;
+    text-align: justify;
 
 }
 
 
-/* Ejercicio 2: Posicionar el header */
+/* Ejercicio 2: Posicionar el header 
+
+Hay una caja con un texto en la parte superior de la pantalla. Eso se supone que es un "placeholder" hasta que tengamos el título de la sección definido. Desafortunadamente no tenemos acceso al HTML, por lo que no podemos ocultarlo modificando el HTML. Usando sólo CSS, asegúrate que la caja no sea mostrada. El id de lo que tenes que ocultar es "ejercicioDos".
+*/
+
+/* Acá va tu código */
+#ejercicioDos {
+    display: none;
+
+}
+
+
+/* Ejercicio 3: 
+
+Debajo verás una caja, la cual contiene adentro una imagen, nos queremos asegurar que esa imagen se posicione dentro de la cajita roja. Debes cambiar el atributo "position", y después ajustar la imagen acorde a la caja. La caja roja está a 100 píxeles del margen superior y 200 píxeles desde la izquierda. El id de la imagen en "ejercicioTres".
+
+*/
+
+/* Acá va tu código */
+#ejercicioTres {
+    position: relative;
+    top: 100px;
+    left: 200px;      
+
+}
+
+
+/* Ejercicio 4: 
+
+La caja azul de abajo se supone que debe ser nuestro header, por lo que debe estar fijo en la parte superior izquierda de la página, y la posición no debería variar cuando la página sea scrolleada. El id de la caja es "ejercicioCuatro". Cambia la posición de esa caja a la esquina superior izquierda.
+*/
+
+/* Acá va tu código */
+#ejercicioCuatro {
+position: fixed;
+top: 0px;  
+left: 0px;    
+
+}
+
+
+/* Ejercicio 5: 
+
+En el header hay tres elementos; "Lecciones de posicionamiento", el logo de Henry y "#SoyHenry". Usando el id "ejercicioCinco", configuraremos este container como "flex box", y nos aseguraremos que cada elemento está distanciado de manera proporcional entre unos y otros. También queremos que cada elemento aparezca centrado verticalmente en la línea.
+*/
 
 /* Acá va tu código */
 
 
+#ejercicioCinco {
+       display:flex ;
+       flex-direction: row-reverse;
+       justify-content: space-between;
+       align-items: center;
+    
+    
+    }
 
-/* Ejercicio 3: */
+/* Ejercicio 6. 
 
-/* Acá va tu código */
+Ahora que los elementos del header están espaciados adecuadamente, vemos que quedaron desordenados. "Lecciones de posicionamiento" deberían estar a la izquierda, y "#SoyHenry" a la derecha. Usando el mismo id que en el ejercicio anterior, cambia la dirección en el cual aparecen los elementos.
 
+*/
 
+#ejercicioSeis {
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ 
+ 
+ }
 
-/* Ejercicio 4: */
+ 
+#elementoDos {
+    position: relative;
+    top: 300px;
+    left: -120px;      
 
-/* Acá va tu código */
+}
 
+#elementoCuatro {
+    position: relative;
+    top: 300px;
+    left: 0px;      
 
+}
 
-/* Ejercicio 5: */
+#elementoTres {
+    position: relative;
+    top: 0px;
+    left: 130px;      
 
-/* Acá va tu código */
-
-
-
-/* Ejercicio 6. */
+}
